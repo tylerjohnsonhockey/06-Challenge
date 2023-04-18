@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+
+<link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+/>
+
+<link
+    href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+    rel="stylesheet"
+/>
+
+<link rel="stylesheet" href="assets/css/style.css"/>
+    <title>Smart Weather Dash</title>
+</head>
+<body>
+    <header class="text-white text-center p-2">
+        <h1>Smart Weather Dashboard</h1>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-md-3 p-2">
+                <form>
+                    <h4>Search for a City:</h4>
+                    <input id = "searchBar" class = "form-control" type="search" placeholder="Search City"></input>
+                    <button id = "submit" class = "form-control mt-2 btn btn-primary" type="button">Search</button>
+                </form>
+                <div id="search-history-button" ></div>
+            </aside>
+            <div class="col-12 col-md-8">
+                <div class="row border" >
+                    <div class ="col-12 p-2">
+                        <h2 id="searched-city"></h2>
+                        <div id="current-weather-container" class="p-2 list-group"></div>
+                        </div>
+                    </div>
+                    <div class = "row border">
+                        <h3 id="forecast" class="col-12 p-2"></h3>
+                        <div id="forecast-container" class ="col-sm-12 justify-content-center d-flex"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>   
+<script src="assets/src/script.js" ></script>
+</body>
+</html>
